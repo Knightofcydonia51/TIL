@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 800px;
+            padding: 16px;
+            border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap; /* 줄였을때 같이 줄여줌. */
+            justify-content: center;
+            align-items: center;
+
+
+            /* flex-center */
+            /* justify-content: space-around;   간격 동일하게 정렬 center : 가운데 정렬*/
+            /* flex-direction: row; */
+            /* flex-direction: column; 가로로 쌓아줌. */ 
+            /* flex-direction: row-reverse; 왼쪽부터 쌓이던 걸 오른쪽부터 쌓이게 바꿔줌.  */
+        }
+
+        .item{
+            padding: 16px;
+            border:2px solid blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item" style="align-self: flex-end">001</div>
+       <div class="item" style="align-self:flex-start">002</div>
+       <div class="item">003</div>
+       <div class="item">004</div>
+       <div class="item">005</div>
+       <div class="item">006</div>
+       <div class="item">007</div>
+       <div class="item">008</div>
+       <div class="item">009</div>
+       <div class="item">010</div>
+       <div class="item">011</div>
+       <div class="item">012</div>
+   </div>
+</body>
+</html>
