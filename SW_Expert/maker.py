@@ -1,4 +1,4 @@
 # Create dummy files
-for i in range(20, 54):
-    f = open("C:/Users/student/SW_Expert/1-{}.py".format(i), 'w')
+for i in range(1, 54):
+    f = open("C:/Users/student/TIL/SW_Expert/2-{}.py".format(i), 'w')
 f.close()
