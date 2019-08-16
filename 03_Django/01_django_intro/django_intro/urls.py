@@ -14,18 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from pages import views
+from django.urls import path, include
 
 urlpatterns = [
-    path('template_language/', views.template_language),
-    path('circle/<int:r>/', views.circle),
-    path('mul/<int:num1>/<int:num2>/', views.mul),
-    path('introduce2/<name>/<int:age>/', views.introduce2),
-    path('hello/<name>/<int:age>/', views.hello), #type의 default는 str
-    path('lorempic/', views.lorempic),
-    path('dinner/', views.dinner),
-    path('introduce/', views.introduce),
-    path('index/', views.index),
+    path('utilities/', include('utilities.urls')),
+    path('pages/', include('pages.urls')),
     path('admin/', admin.site.urls),
 ]
