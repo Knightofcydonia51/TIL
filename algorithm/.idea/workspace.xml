@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e52f414-5258-427e-b791-cb57f34c0f4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../01_Python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../01_Python/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_Web/00_html_intro/05_lunch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Web/00_html_intro/05_lunch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_Web/01_css_intro/03_selector_prac.css" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Web/01_css_intro/03_selector_prac.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_Web/01_css_intro/08_position.html" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Web/01_css_intro/08_position.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/django_intro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_Django/01_django_intro/django_intro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/django_intro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_Django/01_django_intro/django_intro/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/circle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/dinner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/introduce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/introduce2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/lorempic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/mul.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/templates/template_language.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_Django/01_django_intro/pages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Month_Test_01/01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Month_Test_01/02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Month_Test_01/03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Month_Test_01/04.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Month_Test_01/05.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Month_Test_01/월말평가_Python.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../entry_point/A.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../entry_point/B.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/Bruteforce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/GNS_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/GNS_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/killingFly.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/killingFly.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/palindrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/palindrome.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/palindrome2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/palindrome2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/palindrome3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/palindrome3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/practice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/strNum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/strNum.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/stringCompare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/str/stringCompare.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pjt01" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pjt01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pjt03" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pjt03" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,56 +69,52 @@
     <session id="2121099270">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="12" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="388" />
+          <entry key="py" value="5484" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="388" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="5484" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/06.set_sum.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/str/palindrome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="513">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/07.binary_search.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick.py">
+        <entry file="file://$PROJECT_DIR$/str/stringCompare.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
@@ -131,65 +122,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2.List-2/08.special_sort.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/str/stringCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="209">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/08.special_sort.txt">
+        <entry file="file://$PROJECT_DIR$/str/palindrome3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+            <state relative-caret-position="608">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick.txt">
+        <entry file="file://$PROJECT_DIR$/str/GNS_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/str/strNum.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="28" />
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/07.binary_search.txt">
+        <entry file="file://$PROJECT_DIR$/str/palindrome3.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="228">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/bubun.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/03.snail.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.List-2/05.color.py">
+        <entry file="file://$PROJECT_DIR$/str/palindrome2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -209,6 +191,8 @@
       <find>print</find>
       <find>A</find>
       <find>ai</find>
+      <find>CBBCBAAB</find>
+      <find>ZATWDEKDQF</find>
     </findStrings>
     <replaceStrings>
       <replace>B</replace>
@@ -255,6 +239,22 @@
         <option value="$PROJECT_DIR$/1.List/0816/metal_stick.py" />
         <option value="$PROJECT_DIR$/2.List-2/08.special_sort.txt" />
         <option value="$PROJECT_DIR$/2.List-2/08.special_sort.py" />
+        <option value="$PROJECT_DIR$/str/practice.py" />
+        <option value="$PROJECT_DIR$/str/Bruteforce.py" />
+        <option value="$PROJECT_DIR$/str/palindrome.txt" />
+        <option value="$PROJECT_DIR$/str/killingfly.txt" />
+        <option value="$PROJECT_DIR$/str/stringCompare.txt" />
+        <option value="$PROJECT_DIR$/str/palindrome3.txt" />
+        <option value="$PROJECT_DIR$/str/strNum.txt" />
+        <option value="$PROJECT_DIR$/str/strNum.py" />
+        <option value="$PROJECT_DIR$/str/palindrome2.txt" />
+        <option value="$PROJECT_DIR$/str/killingFly.py" />
+        <option value="$PROJECT_DIR$/str/palindrome2.py" />
+        <option value="$PROJECT_DIR$/str/GNS_test.txt" />
+        <option value="$PROJECT_DIR$/str/stringCompare.py" />
+        <option value="$PROJECT_DIR$/str/palindrome3.py" />
+        <option value="$PROJECT_DIR$/str/GNS_test.py" />
+        <option value="$PROJECT_DIR$/str/palindrome.py" />
       </list>
     </option>
   </component>
@@ -280,23 +280,17 @@
             <path>
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="1.List" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="1.List" type="462c0819:PsiDirectoryNode" />
-              <item name="0816" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="2.List-2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="02_Day" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="str" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,8 +314,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.08.special_sort">
-    <configuration name="01.color" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.GNS_test">
+    <configuration name="GNS_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,11 +323,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.List-2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/str" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\work\2.List-2\05.color.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/str/GNS_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -342,7 +336,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="05.color" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="killingFly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,11 +344,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.List-2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/str" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.List-2/05.color.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/str/killingFly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,7 +357,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06.set_sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="palindrome2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -371,11 +365,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.List-2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/str" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.List-2/06.set_sum.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/str/palindrome2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -384,7 +378,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07.binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="palindrome3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,11 +386,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.List-2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/str" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.List-2/07.binary_search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/str/palindrome3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -405,7 +399,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="08.special_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="strNum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -413,11 +407,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.List-2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/str" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.List-2/08.special_sort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/str/strNum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -427,19 +421,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.01.color" />
-      <item itemvalue="Python.06.set_sum" />
-      <item itemvalue="Python.05.color" />
-      <item itemvalue="Python.07.binary_search" />
-      <item itemvalue="Python.08.special_sort" />
+      <item itemvalue="Python.killingFly" />
+      <item itemvalue="Python.palindrome3" />
+      <item itemvalue="Python.strNum" />
+      <item itemvalue="Python.palindrome2" />
+      <item itemvalue="Python.GNS_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.08.special_sort" />
-        <item itemvalue="Python.07.binary_search" />
-        <item itemvalue="Python.06.set_sum" />
-        <item itemvalue="Python.05.color" />
-        <item itemvalue="Python.01.color" />
+        <item itemvalue="Python.GNS_test" />
+        <item itemvalue="Python.palindrome2" />
+        <item itemvalue="Python.killingFly" />
+        <item itemvalue="Python.strNum" />
+        <item itemvalue="Python.palindrome3" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +459,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947312" weight="0.3264642" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" weight="0.33333334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -493,21 +487,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.List/min_max.py" />
     <entry file="file://$PROJECT_DIR$/1.List/num_card.py" />
     <entry file="file://$PROJECT_DIR$/1.List/interval_sum.py" />
     <entry file="file://$PROJECT_DIR$/1.List/electric_bus_input.txt" />
@@ -540,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="243" selection-start-line="3" selection-start-column="240" selection-end-line="3" selection-end-column="243" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_Day/dump.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -602,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2.List-2/05.color.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.List-2/07.binary_search" />
     <entry file="file://$PROJECT_DIR$/2.List-2/02.Sum.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -618,41 +583,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick" />
-    <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.List-2/07.binary_search.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.List-2/bubun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.List-2/03.snail.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.List-2/05.color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -667,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.List-2/07.binary_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -681,17 +604,191 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2.List-2/03.snail.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.List-2/bubun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.List-2/07.binary_search.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="79" lean-forward="true" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2.List-2/08.special_sort.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.List-2/05.color.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.List/0816/metal_stick.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <marker date="1566190531599" expanded="true" signature="21:184" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/killingFly.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_Day/dump.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/palindrome.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2.List-2/08.special_sort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.List-2/05.color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/Bruteforce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <marker date="1566195022213" expanded="true" signature="268:271" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/palindrome2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2995">
+          <caret line="1010" lean-forward="true" selection-start-line="1010" selection-end-line="1010" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/killingFly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/strNum.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/GNS_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="110" selection-start-line="2" selection-start-column="110" selection-end-line="2" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/palindrome3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/palindrome2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/strNum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/GNS_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/stringCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/palindrome3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/stringCompare.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/str/palindrome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
         </state>
       </provider>
     </entry>
