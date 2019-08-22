@@ -85,3 +85,12 @@ print(round(b,3))
 >
 >리스트는 append 사용가능, 튜플은 불가
 >
+
+
+
+### if else 한줄로 쓰기
+
+```python
+return True if len(s)==0 else False
+```
+

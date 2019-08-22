@@ -13,8 +13,9 @@ for i in range(T):
             dict[num]+=1
         else:
             dict[num]=1
-    print(dict)
+    print('#{}'.format(i+1))
     for j in numlist:
         for k in range(dict.get(j)):
-            ans+=j+' '
-    print('#{}\n{}'.format(i+1,ans))
+            print(j,end=' ')
+            if k==dict.get(j)-1:
+                print(j+' ')
