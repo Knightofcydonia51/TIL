@@ -13,17 +13,18 @@ def dfs(v):
         if G[v][w]==1 and visited[w]==0:
             dfs(w)
 
-V, E = map(int,input().split())
 
-temp=list(map(int,input().split()))
+V, E = map(int,input().split()) #노드 수, 간선 수
 
-G=[[0 for i in range(V+1)] for j in range(V+1)]
-visited=[0 for i in range(V+1)]
+temp=list(map(int,input().split())) #간선정보
+
+G=[[0 for i in range(V+1)] for j in range(V+1)] # 지도
+visited=[0 for i in range(V+1)] # dfs 포인터
 
 print(temp)
 
-for i in range(0,len(temp),2):
-    G[temp[i]][temp[i+1]]=1 # 1,2
+for i in range(0,len(temp),2): #지도에 간선정보를 입력
+    G[temp[i]][temp[i+1]]=1 # 1,2 
     G[temp[i+1]][temp[i]]=1 #2,1
 
 for i in range(V+1):
