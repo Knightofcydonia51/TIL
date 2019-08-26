@@ -29,3 +29,31 @@ for i in range(T):
     else:
         print('#{} 0'.format(i + 1))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
