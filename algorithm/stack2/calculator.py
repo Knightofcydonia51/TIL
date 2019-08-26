@@ -1,7 +1,7 @@
 import sys
 sys.stdin=open("calculator.txt")
 
-cal=['*','+']
+cal=['*','+','(',')']
 
 for i in range(10):
     length=input()
@@ -9,30 +9,43 @@ for i in range(10):
     stack=[]
     num=[]
     for j in sik:
-        if j not in cal and j!='(' or j!=')': #숫자일때
+        if j not in cal: #숫자일때
             num.append(j)
         else:
-            if j=='(':
-                num.append(j)
-            
+            if j==')':
+                for k in stack[::-1]:
+                    if k=='(':
+                        stack.pop()
+                        break
+                    num.append(k)
+                    stack.pop()
+            elif len(stack)!=0 and j=='+' and stack[-1]=='+':
+                num.append(stack.pop())
+                stack.append(j)
+            elif len(stack)!=0 and j=='+' and stack[-1]=='*':
+                num.append(stack.pop())
+                stack.append(j)
+            elif len(stack)!=0 and j=='*' and stack[-1]=='*':
+                num.append(stack.pop())
+                stack.append(j)
+            else:
+                stack.append(j)
 
 
-    print(num)
 
-
-    # for j in num:
-    #     if j not in cal:
-    #         stack.append(int(j))
-    #     else:
-    #         a=stack[-1]
-    #         stack.pop()
-    #         b=stack[-1]
-    #         stack.pop()
-    #         if j=='+':
-    #             stack.append(a+b)
-    #         else:
-    #             stack.append(a*b)
-    # print(stack)
+    for j in num:
+        if j not in cal:
+            stack.append(int(j))
+        else:
+            a=stack[-1]
+            stack.pop()
+            b=stack[-1]
+            stack.pop()
+            if j=='+':
+                stack.append(a+b)
+            else:
+                stack.append(a*b)
+    print('#{} {}'.format(i+1, stack[0]))
 
 
 
