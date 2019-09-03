@@ -1,9 +1,6 @@
 import sys
 sys.stdin=open('findProcession.txt')
 
-
-
-
 dx=[0,0,-1,1]
 dy=[-1,1,0,0]
 def dfs(y, x):
@@ -52,6 +49,3 @@ for i in range(T):
     for j in range(len(ans)):
         print(ans[j], end=" ")
     print()
-
-
-
