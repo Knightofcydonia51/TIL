@@ -39,11 +39,12 @@ for y in range(1,len(status)):
     for x in range(len(G)):
         if G[y][x]==1:
             status[y][cnt]=x
-            status[x][2]=y
+            status[x][2]=y #left, right,
             cnt+=1
 
 printTree()
 
+print(status)
 preorder(1)
 print()
 inorder(1)
