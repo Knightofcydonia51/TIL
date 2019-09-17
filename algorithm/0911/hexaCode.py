@@ -16,3 +16,6 @@ for i in range(T):
             code=wholetext.replace('0','')
         print(code)
 
+
+
+
