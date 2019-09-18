@@ -8,7 +8,7 @@ def comb(n,r,q):
             return
         else:
             T[r-1]=A[n-1]
-            comb(n-1,r-1,q)
+            comb(n-1,r-1,q) #comb(n,r-1,q) 중복조합
             comb(n - 1, r, q)
 
 A=[1,2,3,4]
