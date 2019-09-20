@@ -1,5 +1,5 @@
 import sys
-sys.stdin=open("electric_bus_input.txt")
+sys.stdin=open("07.electric_bus_input.txt")
 T=int(input())
 def electric_bus():
     for i in range(T):
