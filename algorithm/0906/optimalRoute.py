@@ -1,23 +1,21 @@
 
 
+def perm(n,k,q):
+    global min
+    if q>min:
+        return
+    if k==3:
+        if q<=min:
+            min=q
+    else:
+        for i in range(k,n):
+            A[k],A[i]=A[i],A[k]
+            perm(n,k+1,q+data[A[k]])
+            A[k], A[i] = A[i], A[k]
 
-T=int(input())
-
-for i in range(T):
-    N=int(input())
-    temp=list(map(int,input().split()))
-    A=[0]+list(range(1,N+1,1)) + [N+1]
-    P=[(0,0) for x in range(N+2)]
-    D=[[0 for x in range(N+2)] for y in range(N+2)]
-    ans=0x7fffffff
-    P[0]=(temp[0], temp[1])
-    P[N+1]=(temp[2],temp[3])
-
-
-
-
-
-
-
-
+data=[10,2,1,3]
+A=[0,1,2,3]
+min=9876
+perm(4,0,0) #목표로 하는 리스트의 길이, 자리바꿔주는 역할을 하는 리스트의 길이, 뽑고싶은 수
+print(min)
 

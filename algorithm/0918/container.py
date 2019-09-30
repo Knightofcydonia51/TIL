@@ -1,26 +1,28 @@
 import sys
 sys.stdin=open('container.txt')
 
-def comb(n,r):
-    global maxi
-    if sum(A)<maxi:return
-    if r==0:
-        if sum(A)>maxi:
-            maxi=sum(A)
-    else:
-        if n<r:return
-        else:
-            if truck[r-1]>=con[n-1]:
-                A[r-1]=con[n-1]
-            comb(n-1,r-1)
-            comb(n - 1, r)
+def cal():
+    global ans
+    weight = 0
+    for k in range(len(container)):
+        for j in range(len(truck)):
+            if j + weight==len(truck):
+                return
+            j = weight + j
+            if container[k]<=truck[j]:
+                ans+=container[k]
+                weight+=1
+                break
+            else:
+                break
 
 T=int(input())
 for i in range(T):
-    N,M=map(int,input().split())
-    con=[int(x) for x in input().split()]
-    truck=[int(x) for x in input().split()]
-    A=[0]*M
-    maxi=0
-    comb(N,M)
-    print(maxi)
+    N,M=map(int, input().split())
+    container=sorted([int(x) for x in input().split()],reverse=True)
+    truck = sorted([int(x) for x in input().split()],reverse=True)
+    ans = 0
+    cal()
+    print('#{} {}'.format(i+1,ans))
+
+

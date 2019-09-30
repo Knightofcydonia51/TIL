@@ -13,7 +13,7 @@ def printSet(n):
     for i in range(n): # 각 부분 배열의 원소 출력
         if A[i]==1:    # A[i]가 1이면 포함된 것이므로 출력.
             sum+=num[i]
-            
+
     if sum==10:
         count+=1
         print("%d :  " % count,end="")
@@ -35,3 +35,5 @@ def powerset(n,k):
         powerset(n,k+1)
 
 powerset(N,0)
+
+

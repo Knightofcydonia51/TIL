@@ -1,6 +1,9 @@
+import time
+start_time = time.time()
+
 N=3
 A=[0 for x in range(N)]
-data=[1,2,3]
+data=[x for x in range(1,N+1)]
 
 
 def printSet(n):
@@ -18,3 +21,7 @@ def powerset(n,k):
         powerset(n,k+1)
 
 powerset(N,0)
+print(time.time() - start_time, 'seconds')
+
+
+

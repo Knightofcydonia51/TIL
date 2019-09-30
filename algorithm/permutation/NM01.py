@@ -5,7 +5,6 @@ sys.stdin=open('NM01.txt')
 def printPerm(M, string):
     s.append(string)
 
-
 def perm(n, k, string):
     if M == k:
         printPerm(M, string)
@@ -24,8 +23,6 @@ for i in range(T):
 
     A = [i for i in range(N)]
     data = [str(i) for i in range(1, N+1)]
-    print(A)
-    print(data)
 
     perm(N, 0, "")
     s.sort()
