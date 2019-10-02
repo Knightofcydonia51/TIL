@@ -274,3 +274,10 @@ articles.models.Article.DoesNotExist: Article matching query does not exist.
 
 
 
+### 쓸만한 익스텐션
+
+```
+polacode : 코드 사진파일로 저장할때
+icons : 파일 아이콘으로 보여줌
+```
+

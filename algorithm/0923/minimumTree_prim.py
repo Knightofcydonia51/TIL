@@ -34,6 +34,7 @@ for i in range(T):
 
     print('#{} {}'.format(i+1,mst()))
 
+
 # T = int(input())
 #
 # def mst():
