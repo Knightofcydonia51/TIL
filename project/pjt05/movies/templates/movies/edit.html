@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2 class="text-center">EDIT</h2>
+<form action="{% url 'movies:update' movie.pk %}" method="POST">
+    {% csrf_token %}
+    <label for="title">title</label>
+       <input type="text" name = "title" id="title" value= '{{ movie.title }}'><br>
+       <label for="title_en">title_en</label>
+
+       <input type="text" name = "title_en" id="title_en" value= '{{ movie.title_en }}'><br>
+       <label for="audience">audience</label>
+
+       <input type="number" name = "audience" id="audience" value= '{{ movie.audience }}'><br>
+       <label for="open_date">open_date</label>
+
+       <input type="date" name = "open_date" id="open_date" value= '{{ movie.open_date }}'><br>
+       <label for="genre">genre</label>
+
+       <input type="text" name = "genre" id="genre" value='{{ movie.genre }}' ><br>
+       <label for="watch_grade">watch_grade</label>
+
+       <input type="text" name = "watch_grade" id="watch_grade" value='{{ movie.watch_grade }}'><br>
+       <label for="score">score</label>
+
+       <input type="float" name = "score" id="score" value='{{ movie.score }}'><br>
+       <label for="poster_url">poster_url</label>
+
+       <input type="text" name = "poster_url" id="poster_url" value='{{ movie.poster_url }}'><br>
+       <label for="description">description</label>
+       
+       <textarea name="description" id="description" cols="30" rows="10">{{ movie.description }}</textarea>
+
+
+    <input type="submit" value="영화 정보 수정">
+
+</form>
+{% endblock %}
+

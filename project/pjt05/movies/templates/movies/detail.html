@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <p>영화명 : {{ movie.title }}({{ movie.title_en }})</p>
+    <p>누적 관객수 : {{ movie.audience }}</p>
+    <p>개봉일 : {{ movie.open_date }} </p>
+    <p>장르 : {{ movie.genre }}</p>
+    <p>관람등급 : {{ movie.watch_grade }}</p>
+    <p>평점 : {{ movie.score }}</p>  
+    <p>소개 : {{ movie.description }}</p>
+    <a href="{% url 'movies:index' %}"><input type="button" value="영화 목록"></a>
+    <a href="{% url 'movies:edit' movie.pk %}"><input type="button" value="영화 수정"></a>
+    <a href="{% url 'movies:delete' movie.pk %}"><input type="button" value="영화 삭제"></a>
+{% endblock %}
