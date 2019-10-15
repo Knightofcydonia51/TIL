@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
     <h2 class="text-center">Articles</h2>
     <h2 class="text-center">this page is index</h2>
+    <img src="{% static 'articles/images/yeonwoo.jpg'%}" alt="yeonwoo">
     {% for article in articles %}
         <p>글 번호: {{ article.id }}</p>
         <p>글 제목: {{ article.title }}</p>
+        <p>글 내용: {{ article.content }}</p>
         <a href="{% url 'articles:detail' article.pk %}">[상세 글]</a>
-        <!-- <p>글 내용: {{ article.content }}</p> -->
         <hr>
     {% endfor %}
-    <a href="{% url 'articles:new' %}">[글 작성]</a>
+    <a href="{% url 'articles:create' %}">[글 작성]</a>
 {% endblock %}
