@@ -106,9 +106,12 @@ venv의 상위 경로에서 select interpreter로 들어가서 venv 선택하면
 >from django.db import models
 >
 >class Article(models.Model):
->    title=models.CharField(max_length=10)
->    content = models.TextField()
->    created_at=models.DateTimeField(auto_now_add=True)
+>title=models.CharField(max_length=10)
+>content = models.TextField()
+>created_at=models.DateTimeField(auto_now_add=True)
+>
+>class Meta:
+>ordering=('-pk',) # 순서결정
 >```
 >
 >python manage.py makemigrations
@@ -120,8 +123,48 @@ venv의 상위 경로에서 select interpreter로 들어가서 venv 선택하면
 >(쉘 들어온 다음)
 >
 >from (앱이름).models import (클래스이름)
+
+
+
+
+
+
+## 관리자 계정(admin.py)
+
+>python manage.py createsuperuser(관리자 계정 생성)
 >
 >
+>
+>admin.py 에서
+>
+>```python
+>from django.contrib import admin
+>from .models import Article
+>
+>@admin.register(Article)
+>class ArticleAdmin(admin.ModelAdmin):
+>    list_display = ('pk', 'title', 'content', 'created_at', 'updated_at',)
+>
+>
+># admin.site.register()
+>
+>```
+
+
+
+## urls.py
+
+>프로젝트 폴더 urls.py에 include설정
+>
+>앱 폴더에 url.py 만들고, 주소 설정
+>
+>from . import views
+>
+>
+
+
+
+
 
 ## 예시
 
@@ -239,12 +282,6 @@ articles.models.Article.DoesNotExist: Article matching query does not exist.
 
 
 
-- 관리자 계정 생성
-
-> python manage.py createsuperuser
-
-
-
 - django-extensions 설치
 
 > pip install django-extensions
@@ -254,6 +291,19 @@ articles.models.Article.DoesNotExist: Article matching query does not exist.
 > python manage.py shell_plus 로 실행
 >
 > 이걸 쓰면 import 안해줘도 됨.
+
+
+
+### 이미지
+
+```
+pip install Pillow
+
+```
+
+
+
+
 
 
 
@@ -279,5 +329,13 @@ articles.models.Article.DoesNotExist: Article matching query does not exist.
 ```
 polacode : 코드 사진파일로 저장할때
 icons : 파일 아이콘으로 보여줌
+```
+
+
+
+## 참고
+
+```
+https://developer.mozilla.org/ko/docs/Learn/Server-side/Django
 ```
 
