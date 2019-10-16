@@ -23,7 +23,7 @@ def mst():
 
 
 for tc in range(1, T+1):
-    V, E = map(int, input().split())
+    V, E = map(int, input().split()) # 노드수-1, 간선수
     edge = [list(map(int, input().split())) for i in range(E)]  #시작, 끝, 가중치
     edge.sort(key=lambda x : x[2])              # 간선을 가중치 기준으로 정렬
     p = list(range(V+1))                        # 대표원소 초기화(make set)
