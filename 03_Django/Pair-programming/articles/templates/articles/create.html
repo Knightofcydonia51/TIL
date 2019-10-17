@@ -1,0 +1,15 @@
+{% extends 'articles/base.html' %}
+
+{% block body %}
+<h2>create</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    <label for="title">title</label>
+    <input type="title" name='title' id='title'><br>
+    <label for="content">content</label>
+    <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
+    <input type="submit" value="글 작성">
+</form>
+
+
+{% endblock %}

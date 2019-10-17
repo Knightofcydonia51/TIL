@@ -11,8 +11,8 @@ class ArticleForm(forms.ModelForm):
                 'placeholder':'Enter the title!',
             }
         )
-
     )
+    
     content=forms.CharField(
         label='내용',
         widget=forms.Textarea(
@@ -35,7 +35,7 @@ class CommentForm(forms.ModelForm):
         model=Comment
         fields=('content',)
 
-        # widgets={
+        # widgets={cd 
         #     'title':forms.TextInput(
         #         attrs={
         #             'class': 'my-title',

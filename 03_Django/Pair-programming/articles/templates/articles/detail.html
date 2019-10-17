@@ -1,0 +1,38 @@
+{% extends 'articles/base.html' %}
+
+{% block body %}
+
+<p>글 번호: {{ article.pk }}</p>
+<p>글 제목: {{ article.title }}</p>
+<p>글 내용: {{ article.content }}</p>
+<p>작성 시간 : {{ article.created_at }}</p>
+<p>수정 시간 : {{ article.updated_at }}</p>
+
+{% for comment in comments %}
+    댓글 번호 : {{ comment.pk }}<br>
+    댓글 내용 : {{ comment.content }}<br>
+    <form action="{% url 'articles:comment_delete' article.pk comment.pk %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="댓글 삭제"><br><br>
+    </form>
+{% endfor %}
+
+
+<a href="{% url 'articles:index' %}">[메인 페이지로]</a>
+<a href="{% url 'articles:update' article.pk %}">[글 수정]</a>
+<br><br>
+
+<form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+    {% csrf_token %}
+    <label for="content">댓글 작성란</label><br>
+    <textarea name="content" id="content" cols="30" rows="1"></textarea><br>
+    <input type="submit" value="댓글 달기">
+</form>
+<br>
+
+<form action="{% url 'articles:delete' article.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="글 삭제">
+</form>
+
+{% endblock %}
