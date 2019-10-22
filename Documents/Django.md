@@ -257,6 +257,58 @@ icons : 파일 아이콘으로 보여줌
 
 
 
+### 장고 ORM 연습
+
+```python
+user1 = User.objects.create(name='Kim')
+user2 = User.objects.create(name='Lee')
+article1 = Article.objects.create(title='1글', user=user1)
+article2 = Article.objects.create(title='2글', user=user1)
+article3 = Article.objects.create(title='3글', user=user2)
+c1 = Comment.objects.create(content='1글1댓글', user=user1, article=article1)
+c2 = Comment.objects.create(content='1글2댓글', user=user2, article=article1)
+c3 = Comment.objects.create(content='1글3댓글', user=user1, article=article1)
+c4 = Comment.objects.create(content='1글4댓글', user=user2, article=article1)
+c5 = Comment.objects.create(content='2글1댓글', user=user1, article=article2)
+c6 = Comment.objects.create(content='!1글5댓글', user=user2, article=article1)
+c7 = Comment.objects.create(content='!2글2댓글', user=user2, article=article2)
+
+
+
+
+
+# 2번 댓글을 쓴 사람의 모든 게시글
+c2.user.article_set.all()
+
+# 1번 글의 첫번째 댓글/ 마지막 댓글을 쓴 사람의 이름
+article1.comment_set.all[0].user.name
+article1.comment_set.last().user.name
+
+# 1번 글의 2번째부터 4번째까지 댓글을 가져오면?
+article1.comment_set.all()[1:4]
+
+# 1번 글의 첫번째 ~ 두번째 댓글을 가져오면?
+article1.comment_set.all()[:2]
+
+# 1번 글의 두번째 댓글을 쓴 사람의 첫번째 게시물의 작성자 이름
+article1.comment_set.all()[1].user.article_set.all()[0].user.name
+
+# 1번 댓글의 user 정보만 가져오면?
+Comment.objects.values('user').all()
+
+# 2번 사람이 작성한 댓글을 content 기준 내림차순으로 가져오면?
+user2.comment_set.order_by('-content')
+
+# 제목이 '1글' 인 게시글은?
+ Article.objects.filter(title='1글')
+
+
+```
+
+
+
+
+
 ## 참고
 
 ```

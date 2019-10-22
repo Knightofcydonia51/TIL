@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<p><b>Hi, I'm index</b></p>
+
+{% for article in articles %}
+<p> {% article %}</p>
+
+
+<a href="/form">글 작성</a>
+{% endblock %}
