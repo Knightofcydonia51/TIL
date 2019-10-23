@@ -2,9 +2,21 @@
 
 {% block body %}
 
-<form action="{% url 'articles:index' %}">
-    <p><b>Create</b></p>
-        {{ form }}
-    <input type="submit" value="글 작성하기">
-</form>
+{% if request.resolver_match.url_name == 'create' %}
+    <h2>CREATE</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+            {{ form }}<br>
+        <input type="submit" value="글 작성하기"><br>
+        <a href="{% url 'articles:index' %}">메인으로</a>
+    </form>
+{% else %}
+    <h2>UPDATE</h2>
+    <form action="" method="POST">
+            {% csrf_token %}
+                {{ form }}<br>
+        <input type="submit" value="수정하기"><br>
+        <a href="{% url 'articles:index' %}">메인으로</a>
+    </form>
+{% endif %}
 {% endblock %}

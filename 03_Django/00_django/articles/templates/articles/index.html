@@ -5,8 +5,14 @@
 <p><b>Hi, I'm index</b></p>
 
 {% for article in articles %}
-<p> {% article %}</p>
+    <form action="{% url 'articles:detail' article.pk %}" method="POST">
+        {% csrf_token %}
+        <p> {{ article.pk }}번 글</p>
+        <p> {{ article.title }}</p>
+        <p> {{ article.content }}</p>
+        <input type="submit" value="상세글 보기">
+    </form>
+{% endfor %}
 
-
-<a href="/form">글 작성</a>
+    <a href="{% url 'articles:create' %}">[글 작성]</a>
 {% endblock %}

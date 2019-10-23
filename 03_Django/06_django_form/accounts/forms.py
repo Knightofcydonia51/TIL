@@ -7,5 +7,7 @@ class CustomUserChangeForm(UserChangeForm): # UserChangForm을 상속받아 커�
         fields= ('email', 'first_name', 'last_name', )
 
 class CustomUserCreationForm(UserCreationForm):
-    class Meta(UserCreationForm.Meta):
-        fields =UserCreationForm.Meta.fields + ('email',)
+    class Meta:
+        model = get_user_model()
+        fields = ('username', 'password1', 'password2', 'email', )
+        
