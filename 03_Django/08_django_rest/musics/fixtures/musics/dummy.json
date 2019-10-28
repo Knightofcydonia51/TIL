@@ -1,0 +1,96 @@
+[
+{
+  "model": "musics.artist",
+  "pk": 1,
+  "fields": {
+    "name": "\uae40\ub3c4\ud6c8"
+  }
+},
+{
+  "model": "musics.artist",
+  "pk": 2,
+  "fields": {
+    "name": "\uc5f0\uc6b0"
+  }
+},
+{
+  "model": "musics.music",
+  "pk": 1,
+  "fields": {
+    "artist": 1,
+    "title": "\ub3c4\ub2c8\uc758\ubaa8\ud5d8"
+  }
+},
+{
+  "model": "musics.music",
+  "pk": 2,
+  "fields": {
+    "artist": 2,
+    "title": "\ubfdc\ubfdc"
+  }
+},
+{
+  "model": "musics.music",
+  "pk": 3,
+  "fields": {
+    "artist": 1,
+    "title": "\ub3c8\uae4c\uc2a4\uac00\uc88b\uc544\uc694"
+  }
+},
+{
+  "model": "musics.music",
+  "pk": 4,
+  "fields": {
+    "artist": 2,
+    "title": "I'm so hot"
+  }
+},
+{
+  "model": "musics.music",
+  "pk": 5,
+  "fields": {
+    "artist": 1,
+    "title": "\ub0b4 \uce5c\uad6c \ud0dc\ud55c\uc774"
+  }
+},
+{
+  "model": "musics.comment",
+  "pk": 1,
+  "fields": {
+    "music": 1,
+    "content": "\ub3c4\ub2c8\uc758 \uc778\uc0dd\uc774 \ub108\ubb34 \uc798 \ub179\uc544\uc788\ub294 \uace1.."
+  }
+},
+{
+  "model": "musics.comment",
+  "pk": 2,
+  "fields": {
+    "music": 3,
+    "content": "\ub4e3\uc790\ub9c8\uc790 \ubc14\ub85c \ub3c8\uae4c\uc2a4 \uc2dc\ucf30\uc2b5\ub2c8\ub2e4"
+  }
+},
+{
+  "model": "musics.comment",
+  "pk": 3,
+  "fields": {
+    "music": 5,
+    "content": "\uc9c4\uc815\uc131 \uc788\ub294 \uac00\uc218 \uae40\ub3c4\ud6c8\uc758 \uc6b0\uc815\uc5d0 \ub300\ud574 \uc54c \uc218 \uc788\uc5c8\ub358 \ub775\uace1"
+  }
+},
+{
+  "model": "musics.comment",
+  "pk": 4,
+  "fields": {
+    "music": 2,
+    "content": "\uc5f0\uc6b0\uc9f1"
+  }
+},
+{
+  "model": "musics.comment",
+  "pk": 5,
+  "fields": {
+    "music": 4,
+    "content": "\uc5f0\uc6b0 \ub108\ubb34 \uc774\ubed0\uc6a9"
+  }
+}
+]
