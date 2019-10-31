@@ -3,6 +3,7 @@
 // 함수 or statement 최상단으로 올려지는 것(hoisting)
 // 변수와 함수를 위한 메모리를 확보하는 과정
 
+/*
 // var
 console.log(a)
 var a = 10
@@ -19,7 +20,7 @@ a = 10
 console.log(a)
 
 // let
-// console.log(b)
+console.log(b)
 let b = 10
 console.log(b)
 // let이 호이스트 되는 과정
@@ -32,6 +33,7 @@ b=10
 // 4. 출력
 console.log(b)
 
+
 // var 할당 과정
 // 1. 선언 - 초기화 (동시에 진행) --> 처음에는 값이 없기 때문에 js가 undefined를 할당
 // 2. 값의 할당 진행
@@ -41,3 +43,34 @@ console.log(b)
 // 2. TDZ(Temporal Dead Zone) -> 임시적 사각지대
 // 3. 초기화 (초기에는 값이 없기 때문에 undefined 할당)
 // 4. 할당
+
+
+let foo
+let bar = undefined
+
+x 
+let x =1
+
+
+
+var y // 선언이 끌어 올려진다. 이때 초기화가 같이 이루어지고 값이 없어서 undefined를 넣어준다.
+var y =1 // 값 할당
+console.log(y)
+
+if (x!==1) {
+  console.log(y) //undefined
+  var y = 3
+  if ( y==3 ){
+    var x = 1
+  }
+  console.log(y) // 3
+}
+
+if (x==1){
+  console.log(y) // 3
+}
+
+x=7
+console.log(x) // 7
+*/
+
