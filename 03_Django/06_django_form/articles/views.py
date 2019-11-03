@@ -5,7 +5,6 @@ from django.contrib.auth import get_user_model
 from .models import Article, Comment
 from .forms import ArticleForm, CommentForm
 import hashlib
-from IPython import embed
 
 def index(request):
     #1. session 정보에서 visits_num 이라는 키로 접근해 값을 가져옴.
@@ -43,7 +42,6 @@ def create(request):
             article.user_id = request.user.id
             article.save()
             
-
             # # form.cleaned_data를 통해 폼 데이터를 정제한다.(form.cleaned_data -> Dict)
             # title=form.cleaned_data.get('title')
             # content=form.cleaned_data.get('content')
@@ -108,7 +106,7 @@ def comments_create(request, article_pk):
         comment_form=CommentForm(request.POST)
         if comment_form.is_valid():
             comment=comment_form.save(commit=False)
-            comment.article_id=article_pk
+            comment.article_id=article_pk # 1:N 관계에서 N은 1이 누구인지 이미 알고 있기 때문에 이런식으로 바로 참조 가능
             comment.user=request.user
             comment.save()
         return redirect('articles:detail',article_pk)

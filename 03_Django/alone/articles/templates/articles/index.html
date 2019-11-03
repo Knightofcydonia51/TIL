@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
 
 {% block body %}
+    {% for article in articles %}
+        <p>글 번호 : {{article.pk}}</p>
+        <p>글 제목 : {{ article.title }}</p>
+        <p>글 내용 : {{ article.content }}</p><br>
+
+        <a href="{% url 'articles:detail' article.pk %}">상세글 보기</a>
+        <form action="{% url 'articles:delete' article.pk %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="글 삭제">
+        
+        </form>
+    {% endfor %}
+
+
     <h2>Index</h2>
+    <a href="{% url 'articles:create' %}">글 작성</a>
 {% endblock %}
 
-<a href="{% url articles:create %}">글 작성</a>
+
