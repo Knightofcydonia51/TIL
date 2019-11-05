@@ -30,9 +30,9 @@ for i in range(t):
     print()
 
     for j in range(0,len(A)-1):
-        for k in range(j,len(A)-1):
-            if A[k+1][0]-A[k][0]+A[k+1][1]-A[k][1]<=1000:
-                G[]
+        for k in range(j+1,len(A)):
+            if A[k][0]-A[j][0]+A[k][1]-A[j][1]<=1000:
+                G[j][k]=1
 
             # if A[k+1][0]-A[k][0]+A[k+1][1]-A[k][1]<=1000:
             #     G[k][k+1]=1
