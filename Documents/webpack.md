@@ -10,3 +10,23 @@ npm i webpack webpack-cli -D
 
 touch webpack.config.js
 
+
+
+
+
+
+
+# cli
+
+npm i -g @vue/cli
+
+vue create todo-vue-cli
+
+ cd todo-vue-cli/
+
+npm run serve
+
+
+
+컴포넌트 만들기 ? : touch src/components/TodoList.vue
+

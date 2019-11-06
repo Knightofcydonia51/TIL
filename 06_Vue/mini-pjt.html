@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todos...............</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+  <div id="app">
+      <h1>Justin's Todo app</h1>
+      <todo-list category="하고싶은일"></todo-list>
+      <todo-list category="해야할일"></todo-list>
+      <todo-list category="해야할일22"></todo-list>
+  </div>
+
+  <script>
+    Vue.component(
+      'todo-list',{
+        template:`
+        <div class="todo-list">
+          <span>
+              {{ category }}<br>
+            <li v-for = "todo in todos">
+              {{ todo.content }} : {{ todo.todayDate }}
+              <button @click="removeTodo">remove</button>
+            </li>
+            <input v-model="newTodo" v-on:keyup.enter="addTodo">
+            <button @click="addTodo">등록</button>
+          </span>
+        </div>
+        `,
+        props:['category'],
+      data: function(){
+      return{
+        todos: [],
+        newTodo: '',
+      }
+    },
+      methods:{
+        addTodo: function(){
+          this.todos.push({
+            id:Date.now(),
+            content:this.newTodo,
+            todayDate:new Date()
+          })
+          this.newTodo=''
+        },
+        removeTodo: function(Id){
+          this.todos=this.todos.filter(() => {
+            return todo.id !== Id
+          })
+        }
+      }    
+    })
+    const app = new Vue({
+      el:"#app",
+      
+    })
+  </script>
+</body>
+</html>
