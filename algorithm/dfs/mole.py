@@ -18,8 +18,6 @@ sys.stdin = open("mole.txt")
 N = int(input())
 data = [list(map(int, input().split())) for _ in range(N)]
 visited = [[0]*N for _ in range(N)]
-print(data)
-print(visited)
 
 b=[]
 a = 1
@@ -35,3 +33,4 @@ for i in range(N):
    print(visited[i])
 for i in range(len(b)):
    print(b[-(i+1)])
+print(a, b)

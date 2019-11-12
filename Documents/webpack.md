@@ -20,7 +20,7 @@ touch webpack.config.js
 
 npm i -g @vue/cli
 
-vue create todo-vue-cli
+vue create 원하는 이름
 
  cd todo-vue-cli/
 
@@ -29,4 +29,8 @@ npm run serve
 
 
 컴포넌트 만들기 ? : touch src/components/TodoList.vue
+
+
+
+
 
