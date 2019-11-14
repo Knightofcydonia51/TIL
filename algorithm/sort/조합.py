@@ -11,7 +11,7 @@ def comb(n,r,q):
             comb(n-1,r-1,q) #comb(n,r-1,q) 중복조합
             comb(n - 1, r, q)
 
-A=[1,2,3,4]
+A=[1,2,3,4,5,6]
 T=[0]*3
 
-comb(4,3,3)
+comb(6,3,3)
