@@ -1,27 +1,42 @@
-import time
-start_time = time.time()
+# import time
+# start_time = time.time()
+#
+# N=3
+# A=[0 for x in range(N)]
+# data=[x for x in range(1,N+1)]
+#
+#
+# def printSet(n):
+#     for i in range(n): # 각 부분 배열의 원소 출력
+#         if A[i]==1: # A[i]가 1이면 포함된 것이므로 출력.
+#             print("%d " % data[i], end="")
+#     print()
+# def powerset(n,k):
+#     if n==k:
+#         printSet(n)
+#     else:
+#         A[k]=1
+#         powerset(n,k+1)
+#         A[k]=0
+#         powerset(n,k+1)
+#
+# powerset(N,0)
+# print(time.time() - start_time, 'seconds')
+#
+#
+#
 
-N=3
-A=[0 for x in range(N)]
-data=[x for x in range(1,N+1)]
+
+import itertools
+
+chars = ['A', 'B', 'C']
+num=[1,2,3]
+
+p = itertools.permutations(chars, 2)  # 순열
+c = itertools.combinations(chars, 2)  # 조합
+n=itertools.permutations(num,1)
 
 
-def printSet(n):
-    for i in range(n): # 각 부분 배열의 원소 출력
-        if A[i]==1: # A[i]가 1이면 포함된 것이므로 출력.
-            print("%d " % data[i], end="")
-    print()
-def powerset(n,k):
-    if n==k:
-        printSet(n)
-    else:
-        A[k]=1
-        powerset(n,k+1)
-        A[k]=0
-        powerset(n,k+1)
-
-powerset(N,0)
-print(time.time() - start_time, 'seconds')
-
-
-
+print(list(p))
+print(list(c))
+print(list(n)[0][0])
