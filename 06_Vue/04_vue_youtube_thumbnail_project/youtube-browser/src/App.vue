@@ -2,8 +2,8 @@
   <div class="container">
     <search-bar @inputChange="onInputChange"></search-bar>
     <div class="row">
-      <video-detail :video="selectedVideo"></video-detail>
-      <video-list @videoSelect="onVideoSelect" :videos="videos"></video-list> <!--videos를 videos라는 이름으로 보내겠다 -->
+      <video-detail :video="selectedVideo"></video-detail> <!--selectedvideo를 video라는 이름으로 보내겠다 -->
+      <video-list @videoSelect="onVideoSelect" :videos="videos"></video-list> 
     </div>
   </div>
 </template>
