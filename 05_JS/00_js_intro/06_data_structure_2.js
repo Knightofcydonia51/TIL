@@ -310,21 +310,21 @@ console.log(admin)
 // some & every Ex1.
 // PEOPLE 중에 admin 권한을 가진 요소를 찾아서 admin 상수에 저장해보자!
 
-const COMPUTERS = [
-  { name : 'macbook', ram:16 },
-  { name : 'gram', ram:8 },
-  { name : 'series9', ram:32 },
-]
+// const COMPUTERS = [
+//   { name : 'macbook', ram:16 },
+//   { name : 'gram', ram:8 },
+//   { name : 'series9', ram:32 },
+// ]
 
-//1. some
-const someComputersAvailable = COMPUTERS.some(function(computer){
-  return computer.ram > 16
-})
+// //1. some
+// const someComputersAvailable = COMPUTERS.some(function(computer){
+//   return computer.ram > 16
+// })
 
-console.log(someComputersAvailable)
-//2. every
-const everyComputersAvailable = COMPUTERS.every(function(computer){
-  return computer.ram > 16
-})
+// console.log(someComputersAvailable)
+// //2. every
+// const everyComputersAvailable = COMPUTERS.every(function(computer){
+//   return computer.ram > 16
+// })
 
-console.log(everyComputersAvailable)
+// console.log(everyComputersAvailable)

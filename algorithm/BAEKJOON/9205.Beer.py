@@ -25,22 +25,22 @@ for i in range(t):
     visit=[0 for x in range(n+2)]
     G=[[0 for x in range(n+2)]for y in range(n+2)]
 
-    for j in range(len(A)):
-        print(A[j])
-    print()
+    # for j in range(len(A)):
+    #     print(A[j])
+    # print()
 
     for j in range(0,len(A)-1):
-        for k in range(j+1,len(A)):
-            if A[k][0]-A[j][0]+A[k][1]-A[j][1]<=1000:
+        for k in range(0,len(A)):
+            if abs(A[k][0]-A[j][0]+A[k][1]-A[j][1])<=1000 and j!=k:
                 G[j][k]=1
 
             # if A[k+1][0]-A[k][0]+A[k+1][1]-A[k][1]<=1000:
             #     G[k][k+1]=1
             #     G[k+1][k] = 1
 
-    for j in range(len(G)):
-        print(j, G[j])
-    print()
+    # for j in range(len(G)):
+    #     print(j, G[j])
+    # print()
 
     flag='sad'
     bfs(0)

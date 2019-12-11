@@ -7,8 +7,6 @@ dx=[0,0,-1,1]
 dy=[1,-1,0,0]
 
 def bfs(y,x):
-    global mini
-    global flag
     queue=[]
     queue.append((y,x,sheet[y][x]))
     D[0][0]=0
@@ -33,4 +31,5 @@ for i in range(T):
     sheet=[[int(x) for x in input().split()]for y in range(N)]
     D = [[987654321] * N for i in range(N)]
     print('#{} {}'.format(i+1,bfs(0,0)))
+
 # print(time.time() - start_time, 'seconds')
