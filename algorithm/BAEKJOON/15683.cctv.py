@@ -32,19 +32,14 @@ sys.stdin=open('15683.cctv.txt')
 
 def dfs(d,info):
     # global cameraList
-    if len(info)==len(cameraList):
+    if d==len(cameraList):
         print(info)
-        info=[]
-        d=0
-        for k in range(len(cameraList)):
-            cameraList[k][3]=1
-        print('gigigi')
+        print('sibal')
 
     for i in range(len(cameraList)):
         cameraList[i][1] -= 1
-        if cameraList[i][0]==1 and cameraList[i][1]+1 and cameraList[i][3]:
+        if cameraList[i][0]==1 and cameraList[i][1]+1:
             info.append([cameraList[i][0],cameraList[i][1],cameraList[i][2]])
-            cameraList[i][3]=0
             dfs(d+1,info)
         elif cameraList[i][0]==2 and cameraList[i][1]+1 and cameraList[i][3]:
             info.append([cameraList[i][0],cameraList[i][1],cameraList[i][2]])
@@ -58,7 +53,6 @@ def dfs(d,info):
             dfs(d+1,info)
         elif cameraList[i][0]==5 and cameraList[i][1]+1 and cameraList[i][3]:
             info.append([cameraList[i][0],cameraList[i][1],cameraList[i][2]])
-            cameraList[i][3] = 0
             dfs(d+1,info)
         cameraList[i][1]+=1
 
