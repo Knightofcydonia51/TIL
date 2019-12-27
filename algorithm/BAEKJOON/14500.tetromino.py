@@ -136,7 +136,9 @@ N,M=map(int,input())
 sheet=[[int(x) for x in input().split()]for y in range(N)]
 for y in range(N):
     for x in range(M):
-        
+        sero_stick(y,x)
+        garo_stick(y,x)
+        square(y,x)
 
 
 
