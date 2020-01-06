@@ -49,6 +49,7 @@ print(list(permu))
 def powerset(n,k):
     global ans2
     if n==k:
+
         ans=[]
         for i in range(n):
             if A[i]==1:

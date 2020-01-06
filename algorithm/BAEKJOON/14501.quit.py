@@ -1,28 +1,35 @@
 import sys
 sys.stdin=open('14501.quit.txt')
 
-def powerset(r,k,ans):
+def powerset(n,k):
     global maxi
-    if ans > maxi:
-        maxi = ans
-    if r>=N:return
-    if data[k][0] > N - r and k!=0:return
-    if k==0 and data[k][0]>N-r:
-        powerset(r+1,k+1,ans)
+    if n==k:
+        ans=[]
+        time = [0] * N
+        ans = 0
+        for i in range(n):
+            if A[i]==1:
+                #남은 시간이 현재 선택 상담 시간보다 작다면 여기서 리턴
+                if i+data[i][0]>N:return
+                for k in range(data[i][0]):
+                    if time[i+k]==1:return
+                    else:time[i+k]=1
+                ans+=data[i][1]
+        if ans==0:
+            pass
+        else:
+           if maxi<ans:
+               maxi=ans
     else:
-        # 남은 기간보다 상담 기간이 길때 return but k가 끝까지 순회하지 않았다면
-        # 끝까지 봐야함
-        for i in range(data[k][0]):
-            T[r+i]=1
-        powerset(r+data[k][0],k+data[k][0],ans+data[k][1])
-        for i in range(data[k][0]):
-            T[r + i] = 0
-        powerset(r+1,k+1,ans)
+        A[k]=1
+        powerset(n,k+1)
+        A[k]=0
+        powerset(n,k+1)
 
 
 N=int(input())
-T=[0]*N
+A=[int(x) for x in range(N)]
 data= [list(map(int, input().split())) for _ in range(N)]
 maxi=0
-powerset(0,0,0)
+powerset(N,0)
 print(maxi)
