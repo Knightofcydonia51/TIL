@@ -5,18 +5,17 @@ sys.stdin=open('1389.kevin.txt')
 
 def bfs(v,obj):
     visit=[0 for x in range(N+1)]
-    q=collections.deque([v])
+    q=collections.deque([(v,0)])
     visit[v]=1
     dis=0
     while q:
-        v=q.popleft()
+        v,dis=q.popleft()
         dis += 1
         if v==obj:
             return dis
         for w in range(1,N+1):
             if G[v][w]==1 and visit[w]==0:
                 visit[w]=1
-
                 q.append((w,dis))
 
 
