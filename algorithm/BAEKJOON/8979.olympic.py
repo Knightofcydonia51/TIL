@@ -13,7 +13,7 @@ for i in range(N):
         sliver=nation[2]
         bronze=nation[3]
     nations.append(nation)
-
+print(nations)
 for i in range(N):
     if nations[i][1]>gold:
         rank+=1

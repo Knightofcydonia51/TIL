@@ -8,7 +8,6 @@ def bfs(v,obj):
     visit[v]=1
     dis=0
     while q:
-
         v,dis=q.popleft()
         if v==obj:
             return dis
@@ -16,7 +15,6 @@ def bfs(v,obj):
         for w in range(1,N+1):
             if G[v][w]==1 and visit[w]==0:
                 visit[w]=1
-
                 q.append((w,dis))
 
 N,M = map(int, input().split())

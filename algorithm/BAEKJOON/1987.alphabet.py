@@ -21,7 +21,6 @@ def bfs(y,x):
                     if step+1>maxi:
                         maxi=step+1
 
-
 R, C = map(int,input().split())
 
 sheet=[[x for x in input()]for y in range(R)]
