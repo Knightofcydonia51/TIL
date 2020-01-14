@@ -7,34 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="app">
-    <button @click="getPosts">Get Posts!</button>
-    <ul>
-      <li v-for="(post, idx) in posts" :key="idx">
-        <b>{{ post.title }}</b> - {{ post.body }}
-      </li>
-    </ul>
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-  <script>
-    const app = new Vue({
-      el: '#app',
-      data:{
-        posts:[],
+<div id="app">
+  <button type="button" v-on:click="add">더하기</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  let app = new Vue({
+      el:'#app',
+      data(){
+        return {
+            counter : 0
+        };
       },
       methods:{
-        getPosts(){
-          axios.get('https://jsonplaceholder.typicode.com/posts')
-          .then(res => {
-            this.posts = res.data
-          })
+        add(){
+          console.log(this.counter);
         }
       }
-    })
-  </script>
+  })
+</script>
 </body>
 </html>
