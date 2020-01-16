@@ -5,6 +5,7 @@
         <v-card-title>
             <h2>Add new</h2>
         </v-card-title>
+        
     </v-card>
   </v-dialog>
 </template>

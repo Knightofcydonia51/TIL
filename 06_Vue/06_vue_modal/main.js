@@ -3,4 +3,8 @@ import VueFuse from 'vue-fuse'
 import App from './App.vue'
 
 Vue.use(VueFuse)
-Vue.conf
+
+
+new Vue({
+    
+})
