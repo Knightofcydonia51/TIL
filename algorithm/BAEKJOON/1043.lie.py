@@ -8,25 +8,39 @@ sys.stdin=open('1043.lie.txt')
 
 def val(i):
     global ans
-    for k in range(1, len(party[i])):
-        if party[i][k] in knowing:
+    if len(party[i])==1:
+        return
+    for k in range(1, len(party[i])): # 범위가 0부터 시작할수도 있다
+        if party[i][k] in people:
             return
-    else:
-        ans+=1
+    ans+=1
 
 def rumor(i):
-    for k in range(1, len(party[i])):
-        knowing.append(party[i][k])
+    for j in range(1, len(party[i])):
+        people.add(party[i][j])
+        trueList.append(i)
+
 
 N,M = map(int, input().split())
 people=[int(x) for x in input().split()]
+people=set(people[1:])
 party=[list(map(int,input().split())) for x in range(M)]
-knowing=[]
+trueList=[]
 
-for i in range(M):
-    for k in range(1, len(party[i])):
-        if party[i][k] in people:
-            rumor(i)
+
+for j in range(M):
+    for i in range(M):
+        if i in trueList:
+            continue
+        for k in range(0, len(party[i])):
+            if len(party[i])==1:
+                break
+            else:
+                if k>0:
+                    if party[i][k] in people:
+                        print(people)
+                        rumor(i)
+
 
 ans=0
 for i in range(M):

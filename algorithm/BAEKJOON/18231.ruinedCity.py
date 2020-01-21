@@ -15,15 +15,11 @@ def val(i):
                 return
             else:
                 tmplist.append(k + 1)
-    cnt=0
     for k in range(len(tmplist)):
         if tmplist[k] in ruined:
-            cnt+=1
             continue
         else:
             ruined.append(tmplist[k])
-    if cnt==len(tmplist):
-        return
     else:
         ans.append(i+1)
     if len(ruined)==len(numbers):
@@ -38,6 +34,7 @@ info=[list(map(int,input().split())) for y in range(M)]
 G=[[0 for x in range(N)]for i in range(N)]
 
 
+
 for i in range(M):
     G[info[i][0]-1][info[i][1]-1]=1
     G[info[i][1]-1][info[i][0]-1]=1
@@ -50,8 +47,9 @@ ans=[]
 flag=0
 
 for i in range(len(numbers)):
-    if flag==1:
+    if flag:
         break
     val(numbers[i]-1)
+
 if not ans:
     print(-1)
