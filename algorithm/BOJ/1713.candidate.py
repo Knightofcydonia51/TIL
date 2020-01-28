@@ -3,14 +3,12 @@ sys.stdin=open('1713.candidate.txt')
 import collections
 
 
-
-
 N=int(input())
 recommend=int(input())
 students=[int(x) for x in input().split()]
 photo=[students[0]]
 recomlist=[0]
-timestamp=[]
+
 
 for i in range(1,len(students)):
     if len(photo)<N:
@@ -31,8 +29,10 @@ for i in range(1,len(students)):
             for j in range(len(recomlist)):
                 if recomlist[j]==min(recomlist):
                     tmp.append([recomlist[j],j])
-            photo[tmp[0][1]]=students[i]
-            recomlist[tmp[0][1]]=0
+            photo.pop(tmp[0][1])
+            photo.append(students[i])
+            recomlist.pop(tmp[0][1])
+            recomlist.append(0)
 
-print(photo)
-print(recomlist)
+for i in sorted(photo):
+    print(i, end=" ")
