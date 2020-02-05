@@ -7,8 +7,11 @@
   <title>Document</title>
 </head>
 <body>
-<div id="app">
-  <button type="button" v-on:click="add">더하기</button>
+  <div id="file-list">
+    <div class="upload-image-preview" v-for="(image, idx) in imageArr" :key="image.id">
+        <img class="image-size" :src="imageArrBase64[idx]" />
+        <button class="deleteImg" @click="deleteImg(image, idx)">×</button>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
@@ -20,8 +23,23 @@
         };
       },
       methods:{
-        add(){
-          console.log(this.counter);
+        imageFiles(e) {
+            var fileList = document.querySelector('#file-list');
+            var get_file = e.target.files;
+            for (var i = 0; i < get_file.length; i++) {
+                this.imageArr.push(get_file[i]);
+            }
+            for (var i = 0; i < get_file.length; i++) {
+                var reader = new FileReader();
+                reader.onload = (function(imgab) {
+                    return function(e) {
+                        imgab.push(e.target.result);
+                    };
+                })(this.imageArrBase64);
+                if (get_file) {
+                    reader.readAsDataURL(get_file[i]);
+                }
+            }
         }
       }
   })

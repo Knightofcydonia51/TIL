@@ -1,5 +1,0 @@
-
-
-var App = new vue(){
-    
-}
