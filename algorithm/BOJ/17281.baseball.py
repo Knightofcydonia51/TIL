@@ -1,19 +1,35 @@
 import sys
 sys.stdin=open('17281.baseball.txt')
 
+import itertools
 import collections
 import copy
 
+# itertools.permutations(l,8)
 
 def game():
+    for i in range(len(innings)):
+        maxi = 0
+        A = innings[i]
+        zeros = 0
+        T = collections.deque([])
+        for k in range(1, 9):
+            if A[k]:
+                T.append(A[k])
+            else:
+                zeros += 1
     global zeros
     global maxi
     bases=collections.deque([0,0,0])
     score=0
     out=0
-    for i in range(zeros):
-        T.append(0)
-    T.appendleft(A[0])
+    if len(T)<3:
+        for i in range(3-len(T)):
+            T.append(0)
+
+    # 3보다 작으면 3- (len(T) 만큼 0이 추가되야함.
+    T.append(A[0])
+    print(T)
     T[3], T[0] = T[0], T[3]
     print(T)
     for i in range(len(T)):
@@ -49,23 +65,16 @@ def perm(k):
             T[k], T[i] = T[i], T[k]
 
 
+# 타순을 정한다.
+#
+
+
 N= int(input())
 innings=[list(map(int,input().split())) for x in range(N)]
 ans=0
 maxi=0
 
-for i in range(len(innings)):
-    maxi=0
-    A=innings[i]
-    zeros=0
-    T = collections.deque([])
-    for k in range(1,9):
-        if A[k]:
-            T.append(A[k])
-        else:
-            zeros+=1
-
-    perm(0)
+perm(0)
 
 print(maxi)
 
