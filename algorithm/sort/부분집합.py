@@ -44,7 +44,7 @@ import itertools
 
 num=[1,2,3,4]
 permu=itertools.permutations(num,3)
-print(list(permu))
+# print(list(permu))
 
 def powerset(n,k):
     global ans2
@@ -65,7 +65,7 @@ def powerset(n,k):
         powerset(n, k + 1)
 
 
-N=3
+N=6
 A=[int(x) for x in range(N)] # 순서바꿔주는 리스트
 data=[int(x) for x in range(1,N+1)] # 돌리고 싶은 집합
 ans2=[]
