@@ -12,8 +12,8 @@ def oneYear(step,cost):
         return
     else:
         oneYear(step+1,cost+day*plan[step+1])
-        oneYear(step + 3, cost + three)
         if plan[step + 1]:
+            oneYear(step + 3, cost + three)
             oneYear(step + 1, cost + month)
 
 T=int(input())

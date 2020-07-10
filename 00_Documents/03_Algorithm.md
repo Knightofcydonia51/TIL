@@ -93,3 +93,12 @@ print(round(b,3))
 return True if len(s)==0 else False
 ```
 
+
+
+### 재귀 깊이제한 푸는법(python)
+
+```
+import sys
+sys.setrecursionlimit(10**6)
+```
+
