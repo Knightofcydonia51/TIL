@@ -10,7 +10,7 @@ def comb(r,k):
             comb(r,k+1)
 # lenarr-(lenarr-n)<r ==> 이러면안돼
 arr=list(range(1,6))
-lenarr=len(arr)
+
 n=3
 T=[0]*n
 comb(0,0)
