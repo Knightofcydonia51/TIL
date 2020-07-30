@@ -4,6 +4,15 @@
 
 
 
+## 커밋 메세지 
+
+- 어두는 Add, Modify, Delete 로 나뉩니다.
+
+- 중간에는 어떤 부분을 추가(수정)했는지와 세부 사항을 설명합니다.
+- ex) [Add] Algo_Programmers_tuple : 알고리즘 저지 Programmers에서 tuple이라는 문제를 풀었다는 뜻.
+
+
+
 ## 문서 설명
 
 ### 01_Web
