@@ -33,5 +33,5 @@ def perm(n,k):
             perm(n, k+1)
             arr[k], arr[i] = arr[i], arr[k]
 
-arr=[1,2,3]
-perm(3, 0)
+arr=[1,2,3,4]
+perm(2, 0)
