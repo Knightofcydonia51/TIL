@@ -40,7 +40,7 @@ sqlite3 tutorial.sqlite3
 
 
 
-## 단축키 일람
+## 명령어 일람
 
 .exit : sql 종료.
 
