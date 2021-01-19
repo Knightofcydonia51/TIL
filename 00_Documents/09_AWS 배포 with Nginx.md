@@ -50,6 +50,8 @@ npm -v
 npm install
 
 # node_modules 생성된거 확인하기
+
+npm build
 ```
 
 
@@ -87,12 +89,6 @@ pid 확인
 마스터(root) 작업 kill
 
 이후 다시 restart하면 작동
-
-
-
-
-
-
 
 
 

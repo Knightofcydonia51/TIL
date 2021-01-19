@@ -1,6 +1,6 @@
 def solution(n):
     answer = ''
-    num=8
+    num=2
 
 
 
