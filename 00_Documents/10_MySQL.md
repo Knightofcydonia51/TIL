@@ -12,8 +12,6 @@
 
 
 
-
-
 ## SELECT *
 
 ```mysql
@@ -91,7 +89,7 @@ IF 절 사용하기
 
 
 
-![SQL Image](C:\Users\USER\Desktop\SQL Image.png)
+![SQL Join](img/SQL Join.png)
 
 
 

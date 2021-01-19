@@ -19,19 +19,19 @@ perm(4,0,0) #목표로 하는 리스트의 길이, 자리바꿔주는 역할을 
 print(min)
 
 
-def PrintArr(n):
-    for i in range(n):
-        print(arr[i], end=" ")
-    print()
-
-def perm(n,k):
-    if k==n:
-        PrintArr(n)
-    else:
-        for i in range(k,n):
-            arr[k], arr[i]=arr[i],arr[k]
-            perm(n, k+1)
-            arr[k], arr[i] = arr[i], arr[k]
-
-arr=[1,2,3,4]
-perm(2, 0)
+# def PrintArr(n):
+#     for i in range(n):
+#         print(arr[i], end=" ")
+#     print()
+#
+# def perm(n,k):
+#     if k==n:
+#         PrintArr(n)
+#     else:
+#         for i in range(k,n):
+#             arr[k], arr[i]=arr[i],arr[k]
+#             perm(n, k+1)
+#             arr[k], arr[i] = arr[i], arr[k]
+#
+# arr=[1,2,3,4]
+# perm(2, 0)
