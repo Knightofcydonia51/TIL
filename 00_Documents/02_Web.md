@@ -216,6 +216,12 @@ REST의 목표는 결국 웹 통신에 있어서 불필요한 자원의 낭비�
 
 
 
+추가필요 : REST API 디자인 규약
+
+https://swalloow.github.io/open-api-guide/
+
+
+
 참고 :  https://meetup.toast.com/posts/92
 
 위키백과 : https://ko.wikipedia.org/wiki/REST
