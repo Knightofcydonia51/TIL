@@ -87,3 +87,47 @@ $ docker exec -it mycentos /bin/bash
 
 - windows 기능 켜기/ 끄기에서 hyper-v 체크하기
 - cmd창 관리자 권한으로 실행한 후 bcdedit /set hypervisorlaunchtype auto 입력
+
+
+
+# Dockfile 문법
+
+- 빌드는 docker desktop이 실행되어 있는 상태에서 진행한다.
+- dockerfile은 확장자가 따로 없으며, dockerfile이 위치한 디렉토리 내에서 docker build -t [태그명] . 명령어로 빌드한다.
+
+```
+FROM [이미지명]
+생성할 이미지의 베이스가 될 이미지를 명시 Docker hub에 등록된 image 중에 선택할 수 있다.
+ex) FROM openjdk:8-jdk-alpine
+
+RUN [실행할 명령어]
+이미지를 만들기 위해 컨테이너 내부에서 명령어를 실행
+RUN 명령어에 ["/bin/bash", "echo hello" >> test.html"] 같이 입력하면 /bin/bash 셸을 이용해 'echo hello >> test2.html'을 실행한다는 뜻
+
+VOLUME [호스트의 디렉토리]
+VOLUME 명령어를 통해 호스트 디렉토리를 docker container 내부와 연결 시킬 수 있습니다. 데이터소스, 로그파일, 설정파일등을 docker container 외부로 노출 시키고자 할 때 사용할 수 있다.
+
+ADD [파일명]
+호스트 컴퓨터의 파일을 컨테이너 내부의 특정 디렉토리로 복사하는 역할을 합니다.COPY 명령어와 유사하나 ADD는 http:// URL에 등록된 파일도 복사 할 수 있는 기능이 있습니다.
+* ADD, COPY 모두 복사할 소스 파일은 docker build를 실행시키는 디렉토리에 위치하고 있어야 합니다.
+
+COPY [파일명]
+호스트 컴퓨터의 파일을 컨테이너 내부의 특정 디렉토리로 복사하는 역할을 합니다.ADD 명령어와 달리 URL에 등록된 파일은 복사가 안됩니다.
+
+ENV [환경변수명] [환경변수 값]
+ex) JAVA_HOME="/var/openjdk"
+
+ENTRYPOINT [실행할 커맨드][커맨드 인자값]
+FROM으로 생성된 이미지 내에서 실행할 명령어를 입력한다
+스크립트 형식으로 사용할 수 있다
+ex) "java", "-jar", "/app.jar"
+
+
+FROM openjdk:8-jdk-alpine   
+RUN apk add --no-cache curl tar bash
+VOLUME /tmp
+ADD build/libs/gs-rest-service-0.1.0.jar app.jar
+ENV JAVA_OPTS=""
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+

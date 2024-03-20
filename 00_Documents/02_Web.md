@@ -244,11 +244,32 @@ https://swalloow.github.io/open-api-guide/
 
 
 
-# CI / CD
-
-추가필요
+# URI / URL
 
 
+
+![](img/URI_URL.png)
+
+- URL(Uniform Resource Locator)은 자원이 실제로 존재하는 위치를 가리킴
+- URI(Uniform Resource Identifier:통합 자원 식별자)는 자원의 위치뿐 아니라 자원에 대한 고유 식별자로서 사용되는 의미를 포함
+- 따라서 URI는 URL을 포괄한다고 볼 수 있다.
+
+
+
+```
+http://www.naver.com/user/1
+```
+
+- 위 URI에서, www.naver.com까지는 자원의 실제 위치를 나타내고 있으므로 URI임과 동시에 URL라고 볼 수 있다.
+- 나머지 부분인 id값 1을 포함하게 되면 자원에 대한 논리적 식별자를 포함하게 되므로 URI라고 지칭해야 한다.
+
+
+
+
+
+# 쿠키와 Samesite
+
+https://seob.dev/posts/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%BF%A0%ED%82%A4%EC%99%80-SameSite-%EC%86%8D%EC%84%B1/
 
 
 
